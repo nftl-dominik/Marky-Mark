@@ -5,7 +5,7 @@
 //  Created by Jim van Zummeren on 31/05/2018.
 //
 
-import Foundation
+import UIKit
 
 public protocol LetterSpacingStylingRule: ItemStyling {
     var letterSpacing : CGFloat? { get }

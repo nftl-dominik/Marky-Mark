@@ -14,7 +14,6 @@ open class ContentfulFlavor : Flavor {
             OrderedListType()
         ]),
         BlockQuoteRule(),
-        HorizontalLineRule(),
         CodeBlockRule(),
         ImageBlockRule()
     ]

@@ -10,7 +10,7 @@ open class StrikeRule: InlineRegexRule {
     public init() {}
 
     /// Example: ~~text~~
-    open var expression = NSRegularExpression.expressionWithPattern("\\~{2}(.+?)\\~{2}")
+    open var expression = NSRegularExpression.expressionWithPattern("\\~{1,2}(.+?)\\~{1,2}")
 
     //MARK: Rule
 

@@ -5,7 +5,7 @@
 //  Created by Jim van Zummeren on 15/05/2018.
 //
 
-import Foundation
+import UIKit
 
 @IBDesignable
 open class MarkdownAttributedLabel: AttributedInteractiveLabel {
