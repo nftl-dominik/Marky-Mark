@@ -12,7 +12,11 @@ class AttributedStringComposer: ElementComposer<NSMutableAttributedString> {
         let result = NSMutableAttributedString()
         for element in elements {
             result.append(element)
-            result.append(NSAttributedString(string: "\n"))
+            if element === elements.last {
+                // Do nothing
+            } else {
+                result.append(NSAttributedString(string: "\n"))
+            }
         }
         
         return result
