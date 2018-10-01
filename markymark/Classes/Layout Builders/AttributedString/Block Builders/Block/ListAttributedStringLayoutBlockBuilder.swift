@@ -72,9 +72,9 @@ private extension ListAttributedStringLayoutBlockBuilder {
         let string:String
         
         if let indexCharacter = listMarkDownItem.indexCharacter {
-            string = indexCharacter + " "
+            string = "   " + indexCharacter + "\t"
         } else {
-            string = "• "
+            string = "   •\t"
         }
         
         return NSMutableAttributedString(string:string, attributes: getBulletStylingAttributes(styling))

@@ -23,7 +23,7 @@ public struct ListStyling: ItemStyling, BulletStylingRule, BaseFontStylingRule, 
 
     public var baseFont: UIFont? = UIFont.systemFont(ofSize: UIFont.systemFontSize)
 
-    public var contentInsets = UIEdgeInsets(top: 0, left:  0, bottom: 10, right: 10)
+    public var contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 10)
 
     public var bottomListItemSpacing: CGFloat = 5
     public var listIdentSpace: CGFloat = 15
