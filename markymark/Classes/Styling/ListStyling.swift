@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-public struct ListStyling: ItemStyling, BulletStylingRule, BaseFontStylingRule, ContentInsetStylingRule, ListItemStylingRule, TextColorStylingRule {
+public struct ListStyling: ItemStyling, BaseFontStylingRule, ContentInsetStylingRule, ListItemStylingRule, TextColorStylingRule {
 
     public var parent : ItemStyling? = nil
 
