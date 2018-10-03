@@ -10,7 +10,7 @@ open class UnOrderedListType: ListType {
     public init() {}
 
     public var pattern: String {
-        return "\\-|\\+|\\*"
+        return "\\-|\\+"
     }
 
     public var relatedListMarkDownType: ListMarkDownItem.Type {
