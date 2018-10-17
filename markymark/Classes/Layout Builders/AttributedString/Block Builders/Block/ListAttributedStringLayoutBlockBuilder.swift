@@ -27,7 +27,7 @@ class ListAttributedStringLayoutBlockBuilder: InlineAttributedStringLayoutBlockB
 
 private extension ListAttributedStringLayoutBlockBuilder {
     
-
+    
     /**
      Loops recursively through all listItems to create
      vertically appended list of ListItemView's
@@ -41,7 +41,7 @@ private extension ListAttributedStringLayoutBlockBuilder {
     func getListAttributedString(_ listMarkDownItem:ListMarkDownItem, styling:ItemStyling, level:CGFloat = 0) -> NSMutableAttributedString {
         
         let listAttributedString = NSMutableAttributedString()
-                
+        
         for listItem in listMarkDownItem.listItems ?? [] {
             
             let bulletStyling = styling as? BulletStylingRule
@@ -56,9 +56,11 @@ private extension ListAttributedStringLayoutBlockBuilder {
             
             let attributedString = attributedStringForMarkDownItem(listItem, styling: styling)
             listItemAttributedString.append(attributedString)
-            listItemAttributedString.append(NSAttributedString(string:"\n"))
+            if listItem !== listMarkDownItem.listItems?.last {
+                listItemAttributedString.append(NSAttributedString(string:"\n"))
+            }
             listAttributedString.append(listItemAttributedString)
-
+            
             if let nestedListItems = listItem.listItems, nestedListItems.count > 0 {
                 listAttributedString.append(getListAttributedString(listItem, styling: styling, level: level + 1))
             }
@@ -72,7 +74,7 @@ private extension ListAttributedStringLayoutBlockBuilder {
         let string:String
         
         if let indexCharacter = listMarkDownItem.indexCharacter {
-            string = "   " + indexCharacter + "\t"
+            string = " \(indexCharacter.count > 2 ? "" : "  ")" + indexCharacter + "\t"
         } else {
             string = "   •\t"
         }
@@ -96,7 +98,7 @@ private extension ListAttributedStringLayoutBlockBuilder {
     
     func getBulletIndentingAttributesForLevel(_ level:CGFloat, listStyling: ListItemStylingRule?) -> [NSAttributedStringKey : Any] {
         let listIndentSpace = (listStyling?.listIdentSpace ?? 0)
-
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.paragraphSpacing = (listStyling?.bottomListItemSpacing ?? 0)
         paragraphStyle.firstLineHeadIndent = listIndentSpace * level
