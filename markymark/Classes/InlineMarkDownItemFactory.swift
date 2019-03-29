@@ -113,9 +113,9 @@ class InlineMarkDownItemFactory {
 
             if !ruleRangePair.range.isOverlappingWithRange(previousRange) || previousRange == nil {
                 filteredRuleRangePairs.append(ruleRangePair)
+                previousRange = ruleRangePair.range
             }
 
-            previousRange = ruleRangePair.range
         }
 
         return filteredRuleRangePairs
