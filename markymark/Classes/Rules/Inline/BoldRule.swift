@@ -9,7 +9,7 @@ open class BoldRule: InlineRegexRule {
     
     public init() {}
 
-    open var expression = NSRegularExpression.expressionWithPattern("(\\*{2}|\\_{2})(.+?)(\\*{2}|\\_{2})(?!\\*|\\_)")
+    open var expression = NSRegularExpression.expressionWithPattern("(\\*{2}|\\_{2})(.+?)(\\*{2}|\\_{2})")
     
     //MARK: Rule
 
