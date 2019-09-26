@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DF442D233CE8D30050CBD4 /* ColoredFragmentMarkDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF442C233CE8D30050CBD4 /* ColoredFragmentMarkDownItem.swift */; };
+		36DF442F233CE8E00050CBD4 /* ColoredFragmentStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF442E233CE8E00050CBD4 /* ColoredFragmentStyling.swift */; };
+		36DF4431233CE8E50050CBD4 /* ColoredFragmentStylingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF4430233CE8E40050CBD4 /* ColoredFragmentStylingRule.swift */; };
+		36DF4433233CE8EC0050CBD4 /* ColoredFragmentRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF4432233CE8EC0050CBD4 /* ColoredFragmentRule.swift */; };
+		36DF4435233CE8FE0050CBD4 /* ColoredAttribiutedStringBlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF4434233CE8FD0050CBD4 /* ColoredAttribiutedStringBlockBuilder.swift */; };
 		36FF46C1213D590D00988B7C /* markyMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FF46BF213D590D00988B7C /* markyMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36FF476F213D593900988B7C /* MarkDownToAttributedStringConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FF46CA213D593900988B7C /* MarkDownToAttributedStringConverterConfiguration.swift */; };
 		36FF4770213D593900988B7C /* MarkDownConverterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FF46CB213D593900988B7C /* MarkDownConverterConfiguration.swift */; };
@@ -152,6 +157,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36DF442C233CE8D30050CBD4 /* ColoredFragmentMarkDownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredFragmentMarkDownItem.swift; sourceTree = "<group>"; };
+		36DF442E233CE8E00050CBD4 /* ColoredFragmentStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredFragmentStyling.swift; sourceTree = "<group>"; };
+		36DF4430233CE8E40050CBD4 /* ColoredFragmentStylingRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredFragmentStylingRule.swift; sourceTree = "<group>"; };
+		36DF4432233CE8EC0050CBD4 /* ColoredFragmentRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredFragmentRule.swift; sourceTree = "<group>"; };
+		36DF4434233CE8FD0050CBD4 /* ColoredAttribiutedStringBlockBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredAttribiutedStringBlockBuilder.swift; sourceTree = "<group>"; };
 		36FF46BC213D590D00988B7C /* markyMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = markyMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FF46BF213D590D00988B7C /* markyMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = markyMark.h; sourceTree = "<group>"; };
 		36FF46C0213D590D00988B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -382,6 +392,7 @@
 		36FF46CF213D593900988B7C /* MarkDown Items */ = {
 			isa = PBXGroup;
 			children = (
+				36DF442C233CE8D30050CBD4 /* ColoredFragmentMarkDownItem.swift */,
 				36FF46D0213D593900988B7C /* ItalicMarkDownItem.swift */,
 				36FF46D1213D593900988B7C /* InlineCodeMarkDownItem.swift */,
 				36FF46D2213D593900988B7C /* MarkDownItem.swift */,
@@ -461,6 +472,7 @@
 		36FF46FC213D593900988B7C /* Styling */ = {
 			isa = PBXGroup;
 			children = (
+				36DF442E233CE8E00050CBD4 /* ColoredFragmentStyling.swift */,
 				36FF46FD213D593900988B7C /* ImageStyling.swift */,
 				36FF46FE213D593900988B7C /* CodeBlockStyling.swift */,
 				36FF46FF213D593900988B7C /* HeadingStyling.swift */,
@@ -483,6 +495,7 @@
 		36FF4709213D593900988B7C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				36DF4430233CE8E40050CBD4 /* ColoredFragmentStylingRule.swift */,
 				36FF470A213D593900988B7C /* ListItemStylingRule.swift */,
 				36FF470B213D593900988B7C /* TextSizeStylingRule.swift */,
 				36FF470C213D593900988B7C /* Styling.swift */,
@@ -518,6 +531,7 @@
 			isa = PBXGroup;
 			children = (
 				36FF4720213D593900988B7C /* InlineRegexRule.swift */,
+				36DF4432233CE8EC0050CBD4 /* ColoredFragmentRule.swift */,
 				36FF4721213D593900988B7C /* InlineRule.swift */,
 				36FF4722213D593900988B7C /* BoldRule.swift */,
 				36FF4723213D593900988B7C /* StrikeRule.swift */,
@@ -664,6 +678,7 @@
 		36FF475B213D593900988B7C /* Inline */ = {
 			isa = PBXGroup;
 			children = (
+				36DF4434233CE8FD0050CBD4 /* ColoredAttribiutedStringBlockBuilder.swift */,
 				36FF475C213D593900988B7C /* InlineTextAttributedStringBlockBuilder.swift */,
 				36FF475D213D593900988B7C /* ItalicAttributedStringBlockBuilder.swift */,
 				36FF475E213D593900988B7C /* CodeAttributedStringLayoutBlockBuilder.swift */,
@@ -788,6 +803,7 @@
 				36FF47A4213D593900988B7C /* DefaultStyling.swift in Sources */,
 				36FF47BF213D593900988B7C /* ImageRule.swift in Sources */,
 				36FF47E8213D593900988B7C /* ListItemView.swift in Sources */,
+				36DF4435233CE8FE0050CBD4 /* ColoredAttribiutedStringBlockBuilder.swift in Sources */,
 				36FF477B213D593900988B7C /* HeaderMarkDownItem.swift in Sources */,
 				36FF47BA213D593900988B7C /* ParagraphStyling.swift in Sources */,
 				36FF47B1213D593900988B7C /* ItalicStylingRule.swift in Sources */,
@@ -809,6 +825,7 @@
 				36FF47CA213D593900988B7C /* BlockQuoteRule.swift in Sources */,
 				36FF47EF213D593900988B7C /* InlineCodeAttributedStringBlockBuilder.swift in Sources */,
 				36FF47D1213D593900988B7C /* InlineMarkDownItemFactory.swift in Sources */,
+				36DF4431233CE8E50050CBD4 /* ColoredFragmentStylingRule.swift in Sources */,
 				36FF47C7213D593900988B7C /* RegExRule.swift in Sources */,
 				36FF47AF213D593900988B7C /* StrikeThroughStylingRule.swift in Sources */,
 				36FF47F2213D593900988B7C /* InlineImageAttributedStringBlockBuilder.swift in Sources */,
@@ -841,6 +858,7 @@
 				36FF47D9213D593900988B7C /* LinkLayoutBuilder.swift in Sources */,
 				36FF478C213D593900988B7C /* AttributedLabelStyling.swift in Sources */,
 				36FF478A213D593900988B7C /* MarkdownAttributedLabel.swift in Sources */,
+				36DF4433233CE8EC0050CBD4 /* ColoredFragmentRule.swift in Sources */,
 				36FF4797213D593900988B7C /* NSAttributedString+FullRange.swift in Sources */,
 				36FF47D3213D593900988B7C /* HasLevel.swift in Sources */,
 				36FF4783213D593900988B7C /* InlineMarkDownItem.swift in Sources */,
@@ -891,6 +909,7 @@
 				36FF47D8213D593900988B7C /* InlineAttributedStringViewLayoutBlockBuilder.swift in Sources */,
 				36FF47F0213D593900988B7C /* StrikeThroughAttributedStringBlockBuilder.swift in Sources */,
 				36FF477D213D593900988B7C /* InlineTextMarkDownItem.swift in Sources */,
+				36DF442D233CE8D30050CBD4 /* ColoredFragmentMarkDownItem.swift in Sources */,
 				36FF47E5213D593900988B7C /* ListView.swift in Sources */,
 				36FF47A2213D593900988B7C /* StrikeThroughStyling.swift in Sources */,
 				36FF47EE213D593900988B7C /* BoldAttributedStringBlockBuilder.swift in Sources */,
@@ -898,6 +917,7 @@
 				36FF47B4213D593900988B7C /* BackgroundStylingRule.swift in Sources */,
 				36FF47F6213D593900988B7C /* ListAttributedStringLayoutBlockBuilder.swift in Sources */,
 				36FF4777213D593900988B7C /* ImageMarkDownItem.swift in Sources */,
+				36DF442F233CE8E00050CBD4 /* ColoredFragmentStyling.swift in Sources */,
 				36FF47AE213D593900988B7C /* BaseFontStylingRule.swift in Sources */,
 				36FF47E4213D593900988B7C /* RemoteImageView.swift in Sources */,
 				36FF47B6213D593900988B7C /* BoldStylingRule.swift in Sources */,

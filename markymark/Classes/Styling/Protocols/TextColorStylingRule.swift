@@ -6,7 +6,6 @@
 import UIKit
 
 public protocol TextColorStylingRule: ItemStyling {
-
     var textColor : UIColor? { get }
 }
 

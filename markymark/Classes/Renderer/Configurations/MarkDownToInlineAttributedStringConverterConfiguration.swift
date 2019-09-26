@@ -14,6 +14,7 @@ class MarkDownToInlineAttributedStringConverterConfiguration: MarkDownConverterC
         super.init(elementComposer: elementComposer, styling : styling)
         addLayoutBlockBuilder(InlineTextAttributedStringBlockBuilder())
         addLayoutBlockBuilder(BoldAttributedStringBlockBuilder())
+        addLayoutBlockBuilder(ColoredFragmentAttributedStringBlockBuilder())
         addLayoutBlockBuilder(StrikeThroughAttributedStringBlockBuilder())
         addLayoutBlockBuilder(ItalicAttributedStringBlockBuilder())
         addLayoutBlockBuilder(InlineImageAttributedStringBlockBuilder())

@@ -16,7 +16,8 @@ open class AttributedLabelFlavor: Flavor {
         ItalicRule(),
         BoldRule(),
         StrikeRule(),
-        LinkRule()
+        LinkRule(),
+        ColoredFragmentRule()
     ]
 
     open var defaultInlineRule: InlineRule = InlineTextRule()

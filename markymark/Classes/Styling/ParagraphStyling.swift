@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct ParagraphStyling: ItemStyling, TextColorStylingRule, LineHeightStylingRule, BaseFontStylingRule, ContentInsetStylingRule, BoldStylingRule, ItalicStylingRule, TextAlignmentStylingRule, LetterSpacingStylingRule {
+public struct ParagraphStyling: ItemStyling, TextColorStylingRule, LineHeightStylingRule, BaseFontStylingRule, ContentInsetStylingRule, BoldStylingRule, ItalicStylingRule, TextAlignmentStylingRule, LetterSpacingStylingRule, ColoredFragmentStylingRule {
 
     public var parent : ItemStyling? = nil
 
@@ -23,6 +23,7 @@ public struct ParagraphStyling: ItemStyling, TextColorStylingRule, LineHeightSty
     
     public var isBold = false
     public var isItalic = false
+    public var isColored: Bool = false
 
     public var textAlignment:TextAlignment = .left
 

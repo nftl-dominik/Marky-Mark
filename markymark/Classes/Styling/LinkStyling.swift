@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-public struct LinkStyling: ItemStyling, TextColorStylingRule, UnderlineStylingRule, BoldStylingRule, ItalicStylingRule, BaseFontStylingRule {
+public struct LinkStyling: ItemStyling, TextColorStylingRule, UnderlineStylingRule, BoldStylingRule, ItalicStylingRule, BaseFontStylingRule, ColoredFragmentStylingRule {
     
     public var parent : ItemStyling? = nil
     
@@ -21,6 +21,7 @@ public struct LinkStyling: ItemStyling, TextColorStylingRule, UnderlineStylingRu
     public var isBold = false
     public var isItalic = false
     public var isUnderlined = true
+    public var isColored: Bool = false
 
     public init(){}
 

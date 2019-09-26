@@ -12,6 +12,7 @@ open class DefaultStyling: Styling {
     public var paragraphStyling = ParagraphStyling()
     public var italicStyling = ItalicStyling()
     public var boldStyling = BoldStyling()
+    public var coloredFragmentStyling = ColoredFragmentStyling()
     public var headingStyling = HeadingStyling()
     public var strikeThroughStyling = StrikeThroughStyling()
     public var listStyling = ListStyling()
@@ -35,7 +36,8 @@ open class DefaultStyling: Styling {
             horizontalLineStyling,
             codeBlockStyling,
             inlineCodeBlockStyling,
-            quoteStyling
+            quoteStyling,
+            coloredFragmentStyling
         ]
     }
 

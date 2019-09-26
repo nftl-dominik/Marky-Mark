@@ -12,22 +12,27 @@ struct StringAttributesBuilder {
         var attributes = [NSAttributedString.Key : Any]()
 
         if let font = styling.neededFont() {
-
             attributes[.font] = font
         }
+        
 
         if styling.shouldBeStrikeThrough() {
-
-            attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)
+            attributes[.strikethroughStyle] = NSNumber(value: NSUnderlineStyle.single.rawValue as Int)
         }
 
         if let textColor = styling.neededTextColor() {
-
+            // Dafault color
+            attributes[.foregroundColor] = textColor
+        }
+        
+        if styling.shouldFontBeColored(),
+            let textColor = styling.neededFragmentTextColor() {
+            // Colored fragments
             attributes[.foregroundColor] = textColor
         }
         
         if styling.shouldFontBeUnderlined() {
-            attributes[.underlineStyle] = NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)
+            attributes[.underlineStyle] = NSNumber(value: NSUnderlineStyle.single.rawValue as Int)
         }
         
         if let backgroundColor = styling.neededBackgroundColor() {

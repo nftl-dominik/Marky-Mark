@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class HeadingStyling: ItemStyling, TextColorStylingRule, BaseFontStylingRule, ContentInsetStylingRule, BoldStylingRule, ItalicStylingRule, UnderlineStylingRule, TextAlignmentStylingRule, CapitalizationStylingRule {
+public class HeadingStyling: ItemStyling, TextColorStylingRule, BaseFontStylingRule, ContentInsetStylingRule, BoldStylingRule, ItalicStylingRule, UnderlineStylingRule, TextAlignmentStylingRule, CapitalizationStylingRule, ColoredFragmentStylingRule {
 
     public var parent : ItemStyling? = nil
 
@@ -47,7 +47,8 @@ public class HeadingStyling: ItemStyling, TextColorStylingRule, BaseFontStylingR
     public var contentInsets: UIEdgeInsets {
         return contentInsetsForLevels.elementForLevel(level) ?? UIEdgeInsets()
     }
-    
+
+    public var isColored: Bool = false
     public var isBold = false
     public var isItalic = false
     public var isUnderlined : Bool = false

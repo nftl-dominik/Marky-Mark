@@ -26,7 +26,8 @@ open class ContentfulFlavor : Flavor {
         StrikeRule(),
         ImageRule(),
         LinkRule(),
-        InlineCodeRule()
+        InlineCodeRule(),
+        ColoredFragmentRule()
     ]
 
     open var defaultInlineRule: InlineRule = InlineTextRule()
