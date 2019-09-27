@@ -10,7 +10,7 @@ open class ColoredFragmentRule: InlineRegexRule {
     
     public init() {}
     
-    open var expression = NSRegularExpression.expressionWithPattern("(\\^{2})(.+?)(\\^{2})")
+    open var expression = NSRegularExpression.expressionWithPattern("(\\^{1})(.+?)(\\^{1})")
     
     //MARK: Rule
     
